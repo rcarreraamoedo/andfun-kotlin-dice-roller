@@ -28,13 +28,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/empty_dice" />
+        app:srcCompat="@drawable/empty_dice"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/roll_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/roll" />
-
+        android:text="@string/roller"
+        app:icon="@drawable/baseline_accessibility_new_black_18dp" />
+        <!--Asignar un icono de imagen en el drawable -->
+        <!--Se le añade un estilo propio para el botón personalizado con style -->
 </LinearLayout>
