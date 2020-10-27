@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Con este String, al español, puedo cambiar el idioma al predeterminado al que está en el dispositivo -->
 <resources>
-    <string name="app_name">Rodillo de dados</string>
-    <string name="roll">Rodar</string>
+    <string name="app_name">Juego del Dado</string>
+    <string name="roll" >Rodar</string>
 </resources>
