@@ -19,7 +19,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
     tools:context=".MainActivity">
 
@@ -27,9 +27,7 @@
         android:id="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/empty_dice" />
@@ -39,12 +37,33 @@
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/roll"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_button"
         app:icon="@drawable/baseline_accessibility_new_black_18dp"
+        app:layout_constraintStart_toStartOf="@+id/dice_image"
+        app:layout_constraintTop_toBottomOf="@+id/dice_image" />
+
+    <Button
+        android:id="@+id/comienzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
-    <!--Asignar un icono de imagen en el drawable -->
-    <!--Se le añade un estilo propio para el botón personalizado con style -->
+
+    <TextView
+        android:id="@+id/textRonda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ronda"
+        app:layout_constraintBottom_toTopOf="@+id/comienzo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_button"
+        app:layout_constraintVertical_bias="0.406" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

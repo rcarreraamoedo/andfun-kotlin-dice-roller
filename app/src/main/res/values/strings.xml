@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Dice Roller</string>
-    <string name="roll" >Roll</string>
+    <string name="roll" translatable="false">roll</string>
+    <string name="tirar" translatable="false">rolling</string>
+    <string name="label_button">another</string>
+    <string name="saludo">Hello toast!</string>
+    <string name="start" />
 </resources>
